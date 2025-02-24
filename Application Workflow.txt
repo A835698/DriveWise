@@ -1,0 +1,7 @@
+Application Workflow
+User opens index.html → Enters login credentials.
+login.js checks login → If correct, redirects to landingPage.html.
+User uploads a PDF file → landingPage.js sends it to /upload (scanpro.py).
+scanpro.py extracts text → Sends it to OpenAI API.
+OpenAI API returns deficiencies & recommendations.
+Response is displayed as a card UI on landingPage.html.
